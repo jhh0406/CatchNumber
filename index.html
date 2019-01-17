@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>갓-파고의 독심술</title>
     <style>
+      html {
+        background-color: #cccccc;
+      }
+
       html, body, .page {
         width:100%;
         height:100%;
@@ -38,6 +42,7 @@
   <body>
     <div class="page">
       <div class="page-1">
+        <img src="메인.jpg">
         <h1>갓-파고의 독심술</h1>
         <input class="startBtn" type="button" value="시작하기!"></input>
       </div>
@@ -47,11 +52,13 @@
         <div class="loading"></div>
       </div>
       <div class="page-2">
-        <h2>1~10사이의 자연수를 생각하세요.</h2>
-        <p class="number">0</p>
-        <input type="button" value="그것보단 커요">
-        <input type="button" value="네 맞았어요">
-        <input type="button" value="그것보단 작아요">
+        <h2 class="text">1~10 사이의 자연수를 생각하세요.</h2>
+        <div class="page-play">
+          <p class="number">0</p>
+          <input class="smallerBtn" type="button" value="그것보단 작아요">
+          <input class="sameBtn" type="button" value="네 맞았어요">
+          <input class="biggerBtn" type="button" value="그것보단 커요">
+        </div>
       </div>
     </div>
     <script src="catch-number.js"></script>
