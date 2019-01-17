@@ -26,6 +26,7 @@ function biggerPlay() {
 
 function samePlay() {
   text.innerHTML = `${answerTime}번 만에 맞췄네요!\n다시하려면 f5를 눌러주세요.`;
+  hiding(pagePlay);
 }
 
 function smallerPlay() {
@@ -78,6 +79,7 @@ function startPlay() {
   playMessage("제가 제시하는 숫자를 보고 버튼을 눌러주세요.", 5000);
   setTimeout(function() {
     showing(pagePlay);
+    showing(number);
     answer();
   }, 5000);
 }
@@ -96,6 +98,7 @@ function init() {
   hiding(page2);
   hiding(pageLoading);
   hiding(pagePlay);
+  hiding(number);
 }
 
 init();
